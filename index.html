@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Soccer Images</title>
+  <title>China Images</title>
 </head>
 <body>
-<h1>Soccer Images</h1>
+<h1>China Images</h1>
 <ol>
   <button onclick="swapPrev()">&lt;</button>
   <button onclick="swapImg()">1</button>
@@ -18,8 +18,12 @@
   <button onclick="swapImg5()">5</button>
   <button onclick="swapNext()">&gt;</button>
 </ol>
-<div class="imgBox not-hidden"></div>
-<div class="imgBox hidden"></div>
+<div class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <p></p>
+  <div><img id="imgBig"></div>
+</div>
+<div class="imgBox"></div>
 <script src="image_api_request.js"></script>
 </body>
 </html>
