@@ -10,6 +10,8 @@ fetch("https://api.unsplash.com/search/photos?page=1&query=soccer&client_id=j3X4
             imgBox.appendChild(imgDiv).setAttribute("class", "imgDiv");
             var img = document.createElement("img");
             imgBox.getElementsByClassName("imgDiv")[i].appendChild(img).setAttribute("src",imageSize);
+            var currentDiv = imgBox.getElementsByClassName("imgDiv")[i];
+            currentDiv.getElementsByTagName("img")[0].setAttribute("class","image"+i);
         }
     })
 
