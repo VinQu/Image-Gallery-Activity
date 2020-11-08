@@ -4,9 +4,10 @@
     overflow: hidden;
     border: solid;
     border-color: black;
-    border-width: 5px;
+    border-width: 4px;
     display: inline-block;
     margin: 10px;
+    padding: 0px;
 }
 
 .modal { /* Hidden by default */
@@ -21,3 +22,10 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+img {
+    margin-left: 0px;
+}
+
+.modal-content {
+    background-color: white;
+}
